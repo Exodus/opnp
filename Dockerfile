@@ -12,4 +12,8 @@ RUN apk --no-cache add \
     git && \
     pip3 install pipenv
 
+WORKDIR /build
+
+COPY Pipfile Pipfile.lock ./
+
 RUN pipenv install --system --deploy --ignore-pipfile
