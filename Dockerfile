@@ -9,6 +9,7 @@ RUN apk --no-cache add \
     python3-dev \
     musl-dev \
     libffi-dev \
-    git
+    git && \
+    pip3 install pipenv
 
 RUN pipenv install --system --deploy --ignore-pipfile
