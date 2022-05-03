@@ -9,7 +9,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  PACKAGE: exodus/opnp
+  PACKAGE: exodus/pnp
 
 jobs:
   build:
